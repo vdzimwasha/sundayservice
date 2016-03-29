@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden; }
+
+.intro-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+video#fullscreen__bg-video {
+  position: fixed;
+  z-index: -100;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.intro {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hidden;
+  color: #fafafa;
+  border: 5px solid #fafafa; }
+  .intro p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fafafa; }
+  .intro h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+a {
+  text-decoration: none;
+  color: #fafafa; }
+  a:hover {
+    color: #e8e8e8;
+    border-bottom: 1px dotted #fafafa; }
+  a:visited {
+    color: #fafafa; }
+
+@media screen and (max-width: 800px) {
+  .intro-text-container {
+    position: fixed;
+    background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .intro-text-container:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      background: rgba(0, 0, 0, 0.1); }
+  .fullscreen__bg-video {
+    display: none; }
+  .intro {
+    width: 100%;
+    max-width: 300px; }
+    .intro h1 {
+      font-size: 18px; } }

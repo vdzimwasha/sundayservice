@@ -1,0 +1,29 @@
+$ cat .gitignore
+
+# Can ignore specific files
+.DS_Store
+Thumbs.db
+
+# Use wildcards as well
+*~
+*.swp
+
+# Can also ignore all directories and files in a directory.
+tmp/**/* 
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+#CSS comb config file 
+.csscomb.json
+
+#Recommended SASS files to add to gitignore 
+.sass-cache/
+*.css.map
+
+#Gulp file 
+gulpfile.js
+
+#Package json file 
+package.json
