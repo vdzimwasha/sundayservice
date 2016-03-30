@@ -76,7 +76,7 @@ a {
       left: 0;
       content: '';
       background: rgba(0, 0, 0, 0.1); }
-  .fullscreen__bg-video {
+  #fullscreen__bg-video {
     display: none; }
   .intro {
     width: 100%;
