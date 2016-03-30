@@ -60,9 +60,13 @@ a {
     color: #fafafa; }
 
 @media screen and (max-device-width: 800px) {
-  html {
-    background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat center center fixed; }
-    html:before {
+  .container__intro-text {
+    background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .container__intro-text:before {
       position: absolute;
       top: 0;
       right: 0;

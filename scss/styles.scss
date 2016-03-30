@@ -83,8 +83,12 @@ a {
 // Mobile styles 
 
 @media screen and (max-device-width: 800px) {
-    html  {
+    .container__intro-text {
         background : url('../../files/img/sunday_service_poster_image.jpg') no-repeat center center fixed;
+        -webkit-background-size : cover;
+           -moz-background-size : cover;
+             -o-background-size : cover;
+                background-size : cover;
         &:before {
             position : absolute;
             top : 0;
