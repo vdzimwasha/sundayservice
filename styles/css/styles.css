@@ -21,12 +21,12 @@ body {
 video#fullscreen__bg-video {
   position: fixed;
   top: 0;
-  left: 0%;
+  left: 0;
   z-index: -1;
   display: block;
   min-width: 100%;
   min-height: 100%;
-  background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat;
+  background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat center center;
   background-size: cover; }
 
 .intro {
