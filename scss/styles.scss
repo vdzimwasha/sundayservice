@@ -35,7 +35,6 @@ video#fullscreen__bg-video
     top: 0; 
     left: 0;
     z-index: -1;
-    display: block;
     min-width: 100%;
     min-height: 100%;
     background: url('../../files/img/sunday_service_poster_image.jpg') no-repeat center center;
@@ -83,14 +82,9 @@ a {
 
 // Mobile styles 
 
-@media screen and (max-width: 800px) {
-    .container__intro-text  {
-        position : fixed;
-        background : url('../../files/img/sunday_service_poster_image.jpg') no-repeat center center;
-        -webkit-background-size : cover;
-           -moz-background-size : cover;
-             -o-background-size : cover;
-                background-size : cover;
+@media screen and (max-device-width: 800px) {
+    html  {
+        background : url('../../files/img/sunday_service_poster_image.jpg') no-repeat center center fixed;
         &:before {
             position : absolute;
             top : 0;
