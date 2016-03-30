@@ -5,7 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   overflow: hidden; }
 
-.intro-text-container {
+.container__intro-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -20,19 +20,13 @@ body {
 
 video#fullscreen__bg-video {
   position: fixed;
-  z-index: -100;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  width: auto;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+  display: block;
   min-width: 100%;
-  height: auto;
   min-height: 100%;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat center center fixed;
+  background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat;
   background-size: cover; }
 
 .intro {
@@ -67,14 +61,14 @@ a {
     color: #fafafa; }
 
 @media screen and (max-width: 800px) {
-  .intro-text-container {
+  .container__intro-text {
     position: fixed;
     background: url("../../files/img/sunday_service_poster_image.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-    .intro-text-container:before {
+    .container__intro-text:before {
       position: absolute;
       top: 0;
       right: 0;
@@ -86,6 +80,7 @@ a {
     display: none; }
   .intro {
     width: 100%;
-    max-width: 300px; }
+    max-width: 300px;
+    margin: 0 auto; }
     .intro h1 {
       font-size: 18px; } }
